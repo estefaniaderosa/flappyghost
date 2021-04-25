@@ -1,0 +1,151 @@
+body{
+    display: flex; 
+}
+
+.contenedor{
+    position: absolute;
+    left: -90px;
+
+}
+
+@font-face {
+    font-family: pixelFont;
+    src: url(VCR_OSD_MONO_1.001.ttf);
+  }
+
+.game-container{
+    width:  500px;
+    height: 730px;
+    position: absolute;
+    left:60px;
+    
+}
+
+.sky{
+    background-image: url('fondo5.gif');
+    background-size: cover;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.border-left {
+    width: 150px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    left:-50px;
+
+}
+
+.border-right{
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    left: 560px;
+}
+
+.border-top{
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    top: -50px;
+    left: -58px;
+}
+
+.ground{
+    background-image:url('bottom-background\ copy.png');
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: 1;
+}
+
+.totalScore{
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+    font-family: pixelFont;
+}
+
+.message{
+    font-family: pixelFont;
+    color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    top: 120px;
+    left: 125px;
+  
+}
+
+.character {
+    background-image: url('nubesita.png');
+    position: absolute;
+    height: 46px;
+    width: 45px;
+}
+
+.obstacle{
+    background-image: url('pipe.png');
+    width: 60px;
+    height: 300px;
+    position: absolute;
+
+}
+
+.topObstacle{
+    background-image: url('pipe.png');
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+
+}
+
+
+.gameOver{
+    z-index: 1000;
+    width: 230px;
+    height: 200px;
+    position: absolute;
+    top: 130px;
+    left: 210px;
+    display: none; 
+}
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 105px;
+    color: rgb(255, 234, 255); 
+    display: none;
+    position: absolute;
+    top:350px;
+    left:280px;
+    z-index: 10; 
+    padding: 0px; 
+}
+
+a:link,
+a:visited{
+    transition: all .2s;
+}
+
+a:hover,
+a:active{
+    color: rgba(233, 146, 187, 0.801);
+}
+    
+    
+  
+  
+ 
+    
+  
